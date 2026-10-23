@@ -1,0 +1,49 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="1560" height="223" viewBox="0 0 1560 223" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame 3945" clip-path="url(#clip0_250_1263)">
+<g id="Ellipse 30" filter="url(#filter0_f_250_1263)">
+<ellipse cx="765" cy="231" rx="324" ry="36" fill="#A16DFE" fill-opacity="0.7"/>
+</g>
+<g id="Ellipse 31" filter="url(#filter1_f_250_1263)">
+<ellipse cx="765" cy="185" rx="121" ry="21" fill="#A16DFE"/>
+</g>
+<g id="Group 117">
+<ellipse id="Ellipse 29" cx="779.5" cy="303" rx="544.5" ry="118" fill="url(#paint0_linear_250_1263)"/>
+<ellipse id="Ellipse 28" cx="779.5" cy="316" rx="639.5" ry="124" fill="black"/>
+</g>
+<circle id="Ellipse 32" cx="581.5" cy="163.5" r="0.5" fill="#B289FF" fill-opacity="0.4"/>
+<circle id="Ellipse 33" cx="519.5" cy="180.5" r="0.5" fill="#B289FF" fill-opacity="0.4"/>
+<circle id="Ellipse 39" cx="1023.5" cy="184.5" r="0.5" fill="#B289FF" fill-opacity="0.4"/>
+<circle id="Ellipse 40" cx="790.5" cy="112.5" r="0.5" fill="#B289FF" fill-opacity="0.4"/>
+<circle id="Ellipse 41" cx="765.5" cy="158.5" r="0.5" fill="#B289FF"/>
+<circle id="Ellipse 46" cx="754.5" cy="119.5" r="0.5" fill="#B289FF" fill-opacity="0.4"/>
+<circle id="Ellipse 36" cx="703.5" cy="138.5" r="0.5" fill="#B289FF"/>
+<circle id="Ellipse 45" cx="736.5" cy="144.5" r="0.5" fill="#B289FF" fill-opacity="0.4"/>
+<circle id="Ellipse 34" cx="619.5" cy="152.5" r="0.5" fill="#B289FF"/>
+<circle id="Ellipse 37" cx="827.5" cy="163.5" r="0.5" fill="#B289FF" fill-opacity="0.4"/>
+<circle id="Ellipse 43" cx="846.5" cy="144.5" r="0.5" fill="#B289FF"/>
+<circle id="Ellipse 44" cx="904.5" cy="172.5" r="0.5" fill="#B289FF" fill-opacity="0.4"/>
+<circle id="Ellipse 35" cx="685.5" cy="168.5" r="0.5" fill="#B289FF" fill-opacity="0.4"/>
+<circle id="Ellipse 42" cx="650.5" cy="108.5" r="0.5" fill="#B289FF" fill-opacity="0.4"/>
+<circle id="Ellipse 38" cx="921.5" cy="145.5" r="0.5" fill="#B289FF" fill-opacity="0.4"/>
+</g>
+<defs>
+<filter id="filter0_f_250_1263" x="317" y="71" width="896" height="320" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="62" result="effect1_foregroundBlur_250_1263"/>
+</filter>
+<filter id="filter1_f_250_1263" x="520" y="40" width="490" height="290" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="62" result="effect1_foregroundBlur_250_1263"/>
+</filter>
+<linearGradient id="paint0_linear_250_1263" x1="462" y1="286.5" x2="1095.31" y2="299.7" gradientUnits="userSpaceOnUse">
+<stop stop-color="#A16DFE" stop-opacity="0"/>
+<stop offset="0.5" stop-color="#A16DFE"/>
+<stop offset="1" stop-color="#A16DFE" stop-opacity="0"/>
+</linearGradient>
+<clipPath id="clip0_250_1263">
+<rect width="1560" height="223" fill="white"/>
+</clipPath>
+</defs>
+</svg>

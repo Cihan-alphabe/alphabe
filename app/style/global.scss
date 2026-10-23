@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: var(--color-black);
+  overflow-x: clip;
+}
+
+body {
+  min-height: 100%;
+  font-family: var(--font-sans), sans-serif;
+  background: var(--color-black);
+  color: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+
+body.is-navOpen {
+  overflow: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+a,
+button {
+  transition:
+    color 0.16s ease,
+    background-color 0.16s ease,
+    border-color 0.16s ease,
+    opacity 0.16s ease,
+    transform 0.16s ease,
+    box-shadow 0.16s ease,
+    filter 0.16s ease;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--page-max);
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media (max-width: 720px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

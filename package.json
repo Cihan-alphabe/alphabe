@@ -1,0 +1,33 @@
+{
+  "name": "alphabe-website",
+  "version": "0.0.1",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "format": "prettier --write \"**/*.{ts,tsx}\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "16.3.5",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "swiper": "^14.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.5",
+    "prettier": "^3.8.1",
+    "sass": "^1.104.1",
+    "typescript": "^5"
+  }
+}

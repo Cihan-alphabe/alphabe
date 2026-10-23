@@ -1,0 +1,368 @@
+.Aggregator {
+  background: #010101;
+  color: var(--color-white);
+
+  &-hero {
+    position: relative;
+    padding: 180px 0 0;
+    overflow: hidden;
+  }
+
+  &-glow {
+    position: absolute;
+    left: 42%;
+    top: -8%;
+    width: min(966px, 70vw);
+    height: auto;
+    pointer-events: none;
+  }
+
+  &-heroInner {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: minmax(0, 604px) minmax(0, 1fr);
+    gap: 40px;
+    align-items: center;
+    min-height: 520px;
+  }
+
+  &-kicker {
+    margin: 0 0 8px;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.24;
+    color: #6d9bfe;
+  }
+
+  &-title {
+    margin: 0 0 28px;
+    max-width: 485px;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1;
+    background: linear-gradient(62.43deg, #ffffff 4.68%, #8a779a 97.37%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  &-lead {
+    margin: 0 0 28px;
+    max-width: 604px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.72);
+  }
+
+  &-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &-btnPrimary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 10px;
+    background: #fff;
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1;
+
+    &:hover,
+    &:focus-visible {
+      background: var(--color-accent);
+    }
+  }
+
+  &-btnLink {
+    display: inline-flex;
+    align-items: center;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    color: #fff;
+
+    &:hover,
+    &:focus-visible {
+      color: var(--color-accent);
+    }
+  }
+
+  &-art {
+    position: relative;
+    min-height: 520px;
+  }
+
+  &-artBg {
+    position: absolute;
+    right: -8%;
+    top: -18%;
+    width: 120%;
+    max-width: none;
+    height: auto;
+    opacity: 0.45;
+    pointer-events: none;
+    object-fit: contain;
+  }
+
+  &-orbit {
+    position: relative;
+    z-index: 1;
+    width: min(520px, 100%);
+    aspect-ratio: 1;
+    margin-left: auto;
+  }
+
+  &-orbitRing {
+    position: absolute;
+    inset: 12%;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 50%;
+
+    &--b {
+      inset: 24%;
+      border-color: rgba(161, 109, 254, 0.28);
+    }
+  }
+
+  &-orbitCore {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: grid;
+    place-items: center;
+    width: 118px;
+    height: 118px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background:
+      radial-gradient(
+        circle at 35% 30%,
+        rgba(255, 255, 255, 0.35),
+        transparent 42%
+      ),
+      linear-gradient(145deg, #7b4fe8, #2a1748);
+    box-shadow:
+      0 0 40px rgba(161, 109, 254, 0.45),
+      inset 0 0 24px rgba(255, 255, 255, 0.12);
+
+    span {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+  }
+
+  &-orbitLogo {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba(16, 14, 28, 0.88);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+    transform: translate(-50%, -50%);
+
+    img {
+      width: 34px;
+      height: 34px;
+      object-fit: contain;
+    }
+  }
+
+  &-highlights {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 192px));
+    gap: 56px;
+    max-width: 799px;
+    margin: 48px 0 56px;
+
+    article {
+      position: relative;
+
+      & + article::before {
+        content: "";
+        position: absolute;
+        left: -28px;
+        top: 4px;
+        width: 1px;
+        height: 65px;
+        background: rgba(255, 255, 255, 0.2);
+      }
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    p {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+      color: rgba(255, 255, 255, 0.65);
+    }
+  }
+
+  &-features {
+    padding: 64px 0 100px;
+  }
+
+  &-games {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 21px;
+  }
+
+  &-game {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    min-height: 141px;
+    padding: 0 28px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    background: rgba(22, 23, 29, 0.72);
+
+    img {
+      width: 70px;
+      height: 70px;
+      flex-shrink: 0;
+      object-fit: contain;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.35;
+      color: rgba(255, 255, 255, 0.62);
+    }
+  }
+
+  &-panels {
+    display: grid;
+    grid-template-columns: minmax(0, 465px) minmax(0, 1fr);
+    gap: 21px;
+    margin-top: 21px;
+  }
+
+  &-panel {
+    min-height: 212px;
+    padding: 60px 48px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    background: rgba(22, 23, 29, 0.72);
+
+    h3 {
+      margin: 0 0 18px;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.2;
+
+      span {
+        background: linear-gradient(90deg, #a16dfe, #6d9bfe);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+    }
+
+    p {
+      margin: 0;
+      max-width: 743px;
+      font-size: 15px;
+      line-height: 22px;
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+
+  @media (max-width: 1100px) {
+    &-hero {
+      padding-top: 140px;
+    }
+
+    &-heroInner,
+    &-games,
+    &-panels,
+    &-highlights {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    &-highlights {
+      max-width: none;
+    }
+
+    &-highlights article + article::before {
+      display: none;
+    }
+
+    &-title {
+      font-size: 36px;
+    }
+
+    &-art {
+      min-height: 360px;
+      order: -1;
+    }
+
+    &-orbit {
+      margin: 0 auto;
+    }
+
+    &-panel {
+      padding: 32px 24px;
+      min-height: 0;
+    }
+  }
+
+  @media (max-width: 720px) {
+    &-hero {
+      padding-top: 120px;
+    }
+
+    &-title {
+      font-size: 28px;
+    }
+
+    &-btnPrimary,
+    &-btnLink {
+      width: 100%;
+      justify-content: center;
+    }
+
+    &-orbitLogo {
+      width: 44px;
+      height: 44px;
+
+      img {
+        width: 26px;
+        height: 26px;
+      }
+    }
+  }
+}

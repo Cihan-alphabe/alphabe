@@ -1,0 +1,22 @@
+.Risk {
+  padding: 120px 0 80px;
+  background: var(--color-white);
+  color: var(--color-ink);
+
+  &-placeholder {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    color: rgba(63, 20, 98, 0.35);
+  }
+
+  @media (max-width: 900px) {
+    padding: 72px 0;
+
+    &-placeholder {
+      font-size: 28px;
+    }
+  }
+}

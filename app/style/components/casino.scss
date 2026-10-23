@@ -1,0 +1,390 @@
+@mixin casino-gradient-text($angle: 56deg) {
+  background-image:
+    radial-gradient(
+      42% 145% at 27% 62%,
+      rgba(161, 109, 254, 1) 0%,
+      rgba(161, 109, 254, 0) 62%
+    ),
+    linear-gradient($angle, #ffffff 4.68%, #8a779a 97.37%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.Casino {
+  background: #010101;
+  color: var(--color-white);
+
+  &-hero {
+    position: relative;
+    overflow: hidden;
+    padding-top: 180px;
+  }
+
+  &-heroGrid {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+      linear-gradient(var(--color-grid), var(--color-grid)),
+      linear-gradient(var(--color-grid), var(--color-grid)),
+      linear-gradient(var(--color-grid), var(--color-grid)),
+      linear-gradient(var(--color-grid), var(--color-grid));
+    background-repeat: no-repeat;
+    background-size: 1px 100%;
+    background-position:
+      353px 0,
+      757px 0,
+      1161px 0,
+      1565px 0;
+  }
+
+  &-heroGlow {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    pointer-events: none;
+
+    &--a {
+      left: -120px;
+      top: 180px;
+      width: 520px;
+      height: 520px;
+      background: rgba(111, 109, 254, 0.28);
+    }
+
+    &--b {
+      right: 8%;
+      top: 40%;
+      width: 360px;
+      height: 360px;
+      background: rgba(161, 109, 254, 0.18);
+    }
+  }
+
+  &-heroCopy {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto 36px;
+    text-align: center;
+  }
+
+  &-kicker {
+    margin: 0 0 8px;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.24;
+    text-transform: uppercase;
+    color: var(--color-eyebrow);
+  }
+
+  &-title {
+    margin: 0 0 22px;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+    background: linear-gradient(62.43deg, #ffffff 4.68%, #8a779a 97.37%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  &-lead {
+    margin: 0 auto;
+    max-width: 800px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.55;
+    color: var(--color-text-muted);
+  }
+
+  &-dashboardWrap {
+    position: relative;
+    z-index: 2;
+  }
+
+  &-dashboard {
+    display: block;
+    width: 100%;
+    max-width: 1606px;
+    margin: 0 auto;
+    border-radius: 24px;
+  }
+
+  &-dashboardFade {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 240px;
+    pointer-events: none;
+    background: linear-gradient(rgba(1, 1, 1, 0), #010101);
+  }
+
+  &-overview {
+    position: relative;
+    padding: 72px 0;
+    overflow: hidden;
+  }
+
+  &-overviewGlow {
+    display: block;
+    position: relative;
+    left: 50%;
+    width: 1560px;
+    max-width: none;
+    height: 223px;
+    margin: -72px 0 32px;
+    transform: translateX(-50%);
+    pointer-events: none;
+  }
+
+  &-overviewCopy {
+    position: relative;
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+      margin: 0 0 28px;
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 1.22;
+      @include casino-gradient-text(58deg);
+    }
+
+    p {
+      margin: 0;
+      font-size: 15px;
+      line-height: 22px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  &-games {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 21px;
+    margin-bottom: 21px;
+  }
+
+  &-game {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    min-height: 141px;
+    padding: 24px 53px;
+    border: 1px solid #332e49;
+    border-radius: 20px;
+
+    img {
+      flex-shrink: 0;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 24px;
+      @include casino-gradient-text(56deg);
+    }
+
+    p {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17px;
+      @include casino-gradient-text(47deg);
+    }
+  }
+
+  &-panels {
+    display: grid;
+    grid-template-columns: 465fr 952fr;
+    gap: 21px;
+  }
+
+  &-panel {
+    min-height: 212px;
+    padding: 60px 49px;
+    border-radius: 20px;
+    background: rgba(22, 23, 29, 0.6);
+
+    h3 {
+      margin: 0 0 19px;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 29px;
+      @include casino-gradient-text(57deg);
+    }
+
+    p {
+      margin: 0;
+      max-width: 743px;
+      font-size: 15px;
+      line-height: 22px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  &-details {
+    padding: 88px 0 100px;
+    background: var(--color-white);
+    color: var(--color-ink);
+  }
+
+  &-detailsCopy {
+    max-width: 740px;
+    margin: 0 auto 56px;
+    text-align: center;
+
+    h2 {
+      margin: 0 0 22px;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 1.2;
+      color: var(--color-ink);
+    }
+
+    p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.4;
+      color: var(--color-ink-muted);
+    }
+  }
+
+  &-features {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 26px 25px;
+    margin-bottom: 32px;
+  }
+
+  &-feature {
+    min-height: 388px;
+    padding: 16px 16px 44px;
+    border: 1px solid #eae5ee;
+    border-radius: 30px;
+    background: var(--color-white);
+    text-align: center;
+
+    h3 {
+      margin: 24px 0 12px;
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--color-black);
+    }
+
+    p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 22px;
+      color: #201c30;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    &-title {
+      font-size: 32px;
+    }
+
+    &-games,
+    &-features,
+    &-panels {
+      grid-template-columns: 1fr;
+    }
+
+    &-overviewGlow {
+      width: 1100px;
+      height: 160px;
+      margin: -40px 0 24px;
+    }
+  }
+
+  @media (max-width: 720px) {
+    &-hero {
+      padding-top: 120px;
+    }
+
+    &-title {
+      font-size: 26px;
+    }
+
+    &-kicker {
+      font-size: 13px;
+    }
+
+    &-game,
+    &-panel {
+      padding: 24px;
+    }
+
+    &-dashboardFade {
+      height: 120px;
+    }
+
+    &-overviewGlow {
+      width: 700px;
+      height: 110px;
+      margin: -24px 0 16px;
+    }
+  }
+}
+
+.CasinoArt {
+  position: relative;
+  aspect-ratio: 429 / 202;
+  overflow: hidden;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #f7f6ff, #edf5fb);
+
+  // Figma exports each illustration cropped to its own content bounds, so every
+  // variant carries the offset and size it has inside the 429x202 frame.
+  img {
+    position: absolute;
+    display: block;
+  }
+
+  &--wheel img {
+    left: 12.82%;
+    top: 19.31%;
+    width: 76.22%;
+    height: 62.38%;
+  }
+
+  &--duel img {
+    left: 5.13%;
+    top: 19.31%;
+    width: 89.74%;
+    height: 62.38%;
+  }
+
+  &--loyalty img {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &--bonus img {
+    left: 0.93%;
+    top: 22.28%;
+    width: 98.37%;
+    height: 76.73%;
+  }
+
+  &--rewards img {
+    left: 37.3%;
+    top: 23.27%;
+    width: 25.41%;
+    height: 53.96%;
+  }
+
+  &--jackpot img {
+    left: 7.23%;
+    top: 13.86%;
+    width: 84.15%;
+    height: 69.31%;
+  }
+}
